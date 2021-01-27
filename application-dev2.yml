@@ -1,4 +1,14 @@
-user:
-    userName: 王立国-dev2
-    sex: 男
-    age: 18
+spring:
+  application:
+    name: config_service
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/huaiqing2020/config_test.git #资源
+          searchPaths: '{profile}'
+          skipSslValidation: true
+          username: lisawang
+          password: Temp1234
+          basedir: edz/user/localGit/ 
